@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Tokyo - Your Ultimate City Guide</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-torii-gate me-2"></i>Tokyo Guide
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#attractions">Attractions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#restaurants">Dining</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#activities">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Tokyo</h1>
+                <p>Experience the perfect blend of ancient traditions and cutting-edge modernity in Japan's vibrant capital</p>
+                <a href="#about" class="btn btn-custom btn-lg">
+                    <i class="fas fa-compass me-2"></i>Start Exploring
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="about" class="intro-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Welcome to Tokyo</h2>
+                <p>The World's Most Dynamic Metropolis</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="intro-content">
+                        <p>Tokyo, Japan's bustling capital, is a mesmerizing metropolis where ultra-modern skyscrapers stand alongside ancient temples, and where cutting-edge technology coexists with time-honored traditions. Home to over 13 million people, this incredible city offers an endless array of experiences.</p>
+                        <p>From the neon-lit streets of Shibuya to the serene gardens of the Imperial Palace, Tokyo presents a fascinating contrast at every turn. The city is renowned for its exceptional cuisine, innovative architecture, rich cultural heritage, and the warmest hospitality you'll find anywhere in the world.</p>
+                        <p>Whether you're seeking adventure, culture, cuisine, or simply want to experience life in one of the world's most efficient cities, Tokyo promises memories that will last a lifetime.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="stat-card">
+                                <span class="stat-number">13M+</span>
+                                <small class="text-muted">Population</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card">
+                                <span class="stat-number">23</span>
+                                <small class="text-muted">Special Wards</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card">
+                                <span class="stat-number">160K+</span>
+                                <small class="text-muted">Restaurants</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card">
+                                <span class="stat-number">1603</span>
+                                <small class="text-muted">Founded</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Attractions</h2>
+                <p>Must-visit landmarks and cultural sites</p>
+            </div>
+            <div class="loading" id="attractions-loading">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p>Loading attractions...</p>
+            </div>
+            <div class="row g-4" id="attractions-container">
+                <!-- Attractions will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section id="restaurants" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Best Restaurants & Cafes</h2>
+                <p>Culinary experiences from street food to Michelin stars</p>
+            </div>
+            <div class="loading" id="restaurants-loading">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p>Loading restaurants...</p>
+            </div>
+            <div class="row g-4" id="restaurants-container">
+                <!-- Restaurants will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Things To Do</h2>
+                <p>Activities, parks, shopping, and entertainment</p>
+            </div>
+            <div class="loading" id="activities-loading">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p>Loading activities...</p>
+            </div>
+            <div class="row g-4" id="activities-container">
+                <!-- Activities will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Local Events</h2>
+                <p>Annual festivals, concerts, and cultural celebrations</p>
+            </div>
+            <div class="loading" id="events-loading">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p>Loading events...</p>
+            </div>
+            <div class="row g-4" id="events-container">
+                <!-- Events will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Information</h2>
+                <p>Local tours and hotel bookings</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h5>Local Tours</h5>
+                        <p>Discover hidden gems with expert local guides</p>
+                        <a href="tel:+81-3-1234-5678" class="btn btn-outline-primary">
+                            <i class="fas fa-phone me-2"></i>+81-3-1234-5678
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-hotel"></i>
+                        </div>
+                        <h5>Hotel Bookings</h5>
+                        <p>Find the perfect accommodation for your stay</p>
+                        <a href="mailto:hotels@tokyoguide.com" class="btn btn-outline-primary">
+                            <i class="fas fa-envelope me-2"></i>Book Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h5>Tourist Information</h5>
+                        <p>Get answers to all your Tokyo travel questions</p>
+                        <a href="mailto:info@tokyoguide.com" class="btn btn-outline-primary">
+                            <i class="fas fa-question-circle me-2"></i>Ask Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Tokyo Guide</h5>
+                    <p>Your ultimate companion for exploring Tokyo's wonders</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p>&copy; 2024 Tokyo Guide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
