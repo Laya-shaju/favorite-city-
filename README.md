@@ -30,7 +30,7 @@ A comprehensive, responsive website showcasing Tokyo's attractions, restaurants,
 
 ## 🚀 Live Demo
 
-[View Live Demo](your-demo-link-here)
+[View Live Demo](https://laya-shaju.github.io/favorite-city-/)
 
 ## 📁 Project Structure
 
@@ -206,16 +206,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - [ ] Booking integration
 - [ ] Social media sharing
 
-## 🐛 Issues & Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](https://github.com/yourusername/tokyo-guide/issues) page
-2. Create a new issue with:
-   - Clear description of the problem
-   - Steps to reproduce
-   - Browser and OS information
-   - Screenshots if applicable
 
 ## 📊 Project Stats
 
